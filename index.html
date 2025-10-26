@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDCAT CPN Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MDCAT CPN Calculator</h1>
+        <p>Calculate your aggregate percentage for MDCAT admissions.</p>
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="matric-obtained">Matric Obtained Marks:</label>
+                <input type="number" id="matric-obtained" min="0" max="1100" required>
+                <span>/ 1100</span>
+            </div>
+            <div class="input-group">
+                <label for="fsc-obtained">FSC Obtained Marks:</label>
+                <input type="number" id="fsc-obtained" min="0" max="1100" required>
+                <span>/ 1100</span>
+            </div>
+            <div class="input-group">
+                <label for="mdcat-score">MDCAT Score:</label>
+                <input type="number" id="mdcat-score" min="0" max="180" required>
+                <span>/ 180</span>
+            </div>
+            <button type="submit">Calculate Aggregate</button>
+        </form>
+        <div id="results" class="results hidden">
+            <h2>Results</h2>
+            <p>Matric Percentage: <span id="matric-percent-value"></span>%</p>
+            <p>FSC Percentage: <span id="fsc-percent-value"></span>%</p>
+            <p>MDCAT Percentage: <span id="mdcat-percent-value"></span>%</p>
+            <p><strong>Aggregate Percentage: <span id="aggregate-value"></span>%</strong></p>
+        </div>
+        <div id="error" class="error hidden"></div>
+        <footer>
+            <p>By Zikrullah Soomro | Student of IT 2nd Year | Sindh University Jamshoro</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
